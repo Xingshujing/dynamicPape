@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+}
+main {
+  /* 
+  需要把滚动太设置到直接父容器，scroll-snap-type(贴合方向，方式)才会生效
+  默认在body上 现在main
+  */
+  /* mandatory 为强制滚动 */
+  /* 如果某个元素的内容太长  就可以把 mandatory 改为 proximity*/
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+
+  /*  比如上方有粘黏导航栏  就会把贴合滚动内容遮挡 
+      此时就要用 scroll-padding  来调整距离
+  */
+
+  /* scroll-padding: 和导航栏高度一样 ; */
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  /* 子元素贴合对其方式 */
+  scroll-snap-align: center;
+}
+img {
+  width: 100vw;
+  height: 100vh;
+}

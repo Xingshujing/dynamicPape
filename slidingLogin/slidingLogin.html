@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/slidingLogin.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+    <title>SLIDING LOGIN</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="welcome">
+        <div class="pinkbox">
+          <!-- 注册 -->
+          <div class="signup nodisplay">
+            <h1>register</h1>
+            <form autocomplete="off">
+              <input type="text" placeholder="Username" />
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <input type="Password" placeholder="Confirm Password" />
+              <button class="button submit">Creat Account</button>
+            </form>
+          </div>
+          <!-- 登录 -->
+          <div class="signin">
+            <h1>Sign In</h1>
+            <form class="more-padding" autocomplete="off">
+              <input type="text" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <div class="checkbox">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember Me</label>
+              </div>
+              <button class="button sumbit">Login</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="leftbox">
+          <h2 class="title"><span>BLOOM</span>&<br />BOUQUET</h2>
+          <p class="desc">pick your perfect <span>booquet</span></p>
+          <img class="flower smaller" src="./image/flowerpupler.webp" />
+          <p class="account">Have an account?</p>
+          <button class="button" id="signin">Login</button>
+        </div>
+
+        <div class="rightbox">
+          <h2 class="title"><span>BLOOM</span>&<br />BOUQUET</h2>
+          <p class="desc">pick your perfect <span>booquet</span></p>
+          <img class="flower" src="./image/floweryellow.webp" />
+          <p class="account">Don't have an account?</p>
+          <button class="button" id="signup">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- partial -->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./slidingLogin.js"></script>
+  </body>
+</html>

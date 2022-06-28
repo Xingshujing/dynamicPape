@@ -1,0 +1,22 @@
+body{
+  background: radial-gradient(120% 50% at bottom center,#f7f7b6,#e96f92,#75517d,#1b2947);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.stars{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /* background: red; */
+}
+
+.star{
+  width: 2px;
+  height: 2px;
+  background: #f7f7b6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  backface-visibility: hidden;
+}

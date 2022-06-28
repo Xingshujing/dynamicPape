@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before Or After</title>
+</head>
+<style>
+    a {
+        position: relative;
+        display: inline-block;
+        outline: none;
+        text-decoration: none;
+        color: #000;
+        font-size: 32px;
+        padding: 5px 50px;
+    }
+    
+    a:hover::before,
+    a:hover::after {
+        position: absolute;
+    }
+    
+    a:hover::before {
+        content: "\5B";
+        left: 30px;
+    }
+    
+    a:hover::after {
+        content: "\5D";
+        right: 30px;
+    }
+    
+    a:hover {
+        transition: 1.5s;
+        color: aliceblue;
+    }
+</style>
+
+<body>
+    <a href="#">nihao</a>
+</body>
+
+</html>

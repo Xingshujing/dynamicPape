@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./chanegCheme.css" />
+    <script src="./js/vue.js"></script>
+    <script src="./chanegCheme.js" defer></script>
+    <title>chanegCheme</title>
+  </head>
+  <body>
+    <div id="app">
+      <link rel="stylesheet" :href="'./cheme/'+theme+'.css'" />
+      <nav>
+        <div class="left">
+          <a href="#">首页</a>
+          <a href="#">新闻</a>
+          <a href="#">文章</a>
+          <a href="#">图片</a>
+        </div>
+        <div class="right">
+          <a href="#" @click="changeCheme('dark')">深色主题</a>
+          <a href="#" @click="changeCheme('default')">默认主题</a>
+          <a href="#">登录</a>
+          <a href="#">注册</a>
+        </div>
+      </nav>
+      <main>前端主题设置</main>
+    </div>
+  </body>
+</html>

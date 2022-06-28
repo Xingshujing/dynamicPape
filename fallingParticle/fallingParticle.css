@@ -1,0 +1,47 @@
+@charset "utf-8";
+html,
+body {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+#bg {
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background: radial-gradient(100% 100% at center center, #021, #000);
+}
+
+.box {
+    position: absolute;
+}
+
+.light {
+    position: absolute;
+    border-radius: 50%;
+}
+
+@keyframes moveX {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveY {
+    0% {
+        transform: translateY(-400px);
+    }
+    100% {
+        transform: translateY(400px);
+    }
+}

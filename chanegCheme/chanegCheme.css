@@ -1,0 +1,45 @@
+@import url(./cheme/default.css);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body_bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  background-color: var(--nav_bg);
+  padding: 0 60px;
+  width: calc(100% - 120px);
+}
+
+nav .left {
+  width: 70%;
+}
+
+nav .right {
+  width: 40%;
+}
+
+nav a {
+  margin-right: 10px;
+  color: var(--nav_color);
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+main {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: var(--main_color);
+}

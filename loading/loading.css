@@ -1,0 +1,116 @@
+@import url("https://fonts.goodleapis.com/css?family=Open_Sans:300,400,600,700,800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: rgba(211, 21, 21, 0.486);
+}
+
+div {
+  position: relative;
+}
+
+#rangValue {
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+  font-size: 10em;
+  color: antiquewhite;
+  font-weight: 800;
+  z-index: 1;
+}
+
+#rangValue::after {
+  content: "%";
+}
+.range {
+  position: relative;
+  width: 500px;
+  height: 30px;
+  appearance: none;
+  background-color: rgb(245 236 136 / 74%);
+  outline: none;
+  border-radius: 30px;
+  border: 2px solid rgba(243, 88, 88, 0.719);
+  box-shadow: 0 0 0 2px rgb(241, 114, 76);
+  inset: 0 0 5 px #000;
+
+  z-index: 1;
+  overflow: hidden;
+}
+
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(243, 200, 10);
+  cursor: pointer;
+  border: 10px solid rgba(224, 240, 153, 0.747);
+  border-radius: 50%;
+  box-shadow: -415px 0 0 400px rgba(243, 241, 103, 0.904);
+}
+
+#fillRangeTopLeft {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50%;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  box-sizing: border-box;
+  backdrop-filter: blur(15px);
+}
+#fillRangeTopRight {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: 2;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  box-sizing: border-box;
+  backdrop-filter: blur(15px);
+}
+#fillRangeBottomLeft {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  z-index: 2;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  box-sizing: border-box;
+  backdrop-filter: blur(15px);
+}
+#fillRangeBottomRight {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  z-index: 2;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  box-sizing: border-box;
+  backdrop-filter: blur(15px);
+}
